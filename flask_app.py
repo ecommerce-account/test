@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import stripe
 from flask import render_template, Flask, request
 
@@ -23,7 +25,7 @@ def charge():
             customer=customer.id,
             amount=amount,
             currency='jpy',
-            description='ZZ¤“X‚Ì‚¨‚·‚·‚ß•iiPythonAnywherej',
+            description='å•†åº—ã®ãŠã™ã™ã‚å“ï¼ˆPythonAnywhereï¼‰',
             receipt_email=user_email,
         )
         return render_template('charge.html', amount=amount)
