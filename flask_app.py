@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-
 import stripe
 from flask import render_template, Flask, request
 
